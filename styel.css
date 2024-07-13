@@ -1,0 +1,256 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;900&display=swap");
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body
+{
+    height: 100vh;
+    background-color: #0162be;
+    font-family: "Roboto", sans-serif;
+    overflow-x: hidden;
+}
+nav .logo
+{
+    width: 50px;
+    margin-top: 10px;
+}
+.container
+{
+    margin: 0 7rem;
+    height: 100%;
+}
+nav{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 25px 0;
+}
+ul 
+{
+    list-style-type: none;
+   display: flex;
+   align-items: center;
+}
+ul li a{
+    text-decoration: none;
+    color: #fff;
+    padding: 15px;
+    text-transform: capitalize;
+    transition: all 1s;
+  
+}
+ul li a:hover
+{
+   color: red;
+   
+}
+#home .container .text h1{
+    color: #fff;
+    font-size: 40px;
+    font-weight: 900;
+}
+#home .container .text span{
+    font-size: 70px;
+    color: red;
+}
+#home .container .content
+{
+    display: flex;
+    justify-content: space-between;
+    height: 70%;
+    align-items: center;
+}
+
+#home .container .content img{
+    width: 220px;
+    margin-top: 20px;
+    animation:  animation3 1s ease-out;
+}
+#home .container .content p{
+    color:#fff ;
+    line-height: 1.4;
+    margin-top: 10px;
+    width: 60%;
+    font-weight: 300;
+}
+#home .container .content .btn{
+    display: inline-block;
+    text-decoration: none;
+    padding: 10px 15px;
+    margin-top: 30px;
+    color: #000;
+    background-color: #fff;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all 0.4;
+    font-size: 14px;
+
+}
+#home .container .content .btn:hover{
+    background-color: transparent;
+    border: 1px solid #fff;
+    color: #fff;
+}
+.icons i
+{
+    color: #fff;
+    font-size: 30px;
+    margin: 15px 0 0 50px;
+    transition: all 0.5s;
+    animation: animation1 1s ease-out;
+}
+.icons i:hover
+{
+  scale: 1.2;
+  color: red;
+
+}
+.gallery img
+{
+    display: flex;
+    width: 100px;
+    margin: auto;
+    margin-top: 20px;
+    animation: animation2 1s infinite;
+}
+/*animation*/
+@keyframes animation1
+{
+    0%{
+        transform: translateX(330px);
+        color: red;
+    }
+    100%{
+        transform: translateX(0);
+        color: #fff;
+    }
+}
+@keyframes animation3
+{
+    0%{
+       transform: rotate(360deg);
+    }
+    100%{
+        transform: rotate(0);
+       
+    }
+}
+@keyframes animation2
+{
+    0%{
+        transform: translateY(100px);
+        transform: rotate(360deg);
+    }
+    100%{
+        transform: translateY(0);
+        transform: rotate(0);
+    }
+}
+@media (max-width: 800px) {
+    #home .container .content
+{
+    width: 100%;
+    margin: 15px auto;
+    
+   
+}
+    .container {
+      margin: 0 2rem;
+    }
+    #home .container .content img
+    {
+        width: 150px;
+    }
+    #home .container .content .text h1
+   {
+    font-size: 25px;
+    font-weight: 900;
+   } 
+   #home .container .content .text span
+   {
+    font-size: 40px
+   }
+   #home .container .content .text p
+   {
+    width: 80%;
+   }
+  
+  }
+  @media (max-width: 600px) {
+    nav ul {
+        justify-content: center;
+      }
+      .container {
+        margin: 0 1rem;
+      }
+     
+  
+    nav 
+
+    { 
+        display: block;
+        margin: 0 auto 15px auto; 
+        width: 30%;  
+       
+    }
+    ul li a 
+    {
+        font-size: 13px;
+        padding-left: 3px;
+        margin: 10px 0 auto 0;
+        display: block;
+        
+    }
+    .container .logo
+    {
+        width: 50px;
+    }
+    
+    #home .container .content 
+    {
+        flex-direction: column;
+        text-align: center;
+    }
+    #home .container .content .text h1
+   {
+    font-size: 30px;
+    font-weight: 900;
+   } 
+   #home .container .content .text span
+   {
+    font-size: 50px
+   }
+   #home .container .content .text p
+   {
+    width: 90%;
+   }
+   .icons i
+   {
+     
+       font-size: 20px;
+       margin: 10px 15px 15px 15px;
+   }
+   #home .container .content .btn
+   {
+    padding: 9px ;
+    font-size: 12px;
+
+   }
+   .gallery img
+{
+  
+    width: 80px;
+    margin-bottom: 50px;
+   
+}
+#home .container .content img
+{
+    width: 120px;
+}
+
+  
+  }
+    
